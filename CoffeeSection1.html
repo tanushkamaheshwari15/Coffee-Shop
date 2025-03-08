@@ -15,18 +15,17 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-2">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark p-2" style="z-index: 1;">
         <div class="container-fluid ">
             <a href="#" class="navbar-brand">
                 <img src="https://cbx-prod.b-cdn.net/COLOURBOX33112712.jpg?width=800&height=800&quality=70"
                     alt="loading" height="50px">
             </a>
-
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#tanu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="me-auto collapse navbar-collapse" id="tanu">
+            <div class="me-auto collapse navbar-collapse" id="tanu" style="position: absolute; right: 0; top: 50px;">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="#section1" class="nav-link fw-bold">Home</a></li>
                     <li class="nav-item"><a href="#section2" class="nav-link fw-bold">About</a></li>
@@ -35,11 +34,12 @@
                     <li class="nav-item"><a href="#section5" class="nav-link fw-bold">Blogs</a></li>
                     <li class="nav-item"><a href="#section6" class="nav-link fw-bold">Contact</a></li>
                     <li class="nav-item"><a href="#myreview" class="nav-link fw-bold">Review</a></li>
-
                 </ul>
+
                 <!-- <a href="#"><i class="fa-solid fa-magnifying-glass text-white fs-5" id="search"></i></a>
                 <a href="#"><i class="fa-solid fa-store text-white fs-5" id="home"></i></a> -->
             </div>
+
 
     </nav>
 
@@ -57,11 +57,11 @@
     <!-- section 2 about us -->
     <section id="section2">
         <h1 class="about-text text-center pt-4 pb-3" id="sechead">ABOUT US</h1>
-        <div class="container border">
-            <div class="row">
+        <div class="container" id="about-parent-container">
+            <div class="row" id="about-container">
                 <img src="https://images.news18.com/ibnlive/uploads/2024/01/image-76-2024-01-c4b36ce27d9508ae9aa4b2f55a0b220f-16x9.jpg?impolicy=website&width=640&height=360"
                     alt="Lodding" class="col-6 p-0">
-                <div class="col-6 text-center pt-5">
+                <div class="col-6 text-center pt-5" id="about-container-text">
                     <h2 class="about-text text-info" id="about-heading">What Makes Our Coffee Special ?</h2>
 
                     <p class="about-text" id="about-para1">Specialty coffee is considered high quality because of the
@@ -263,7 +263,10 @@
             </div>
         </footer>
     </section>
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
